@@ -2,12 +2,31 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Unofficial client library for The COVID Tracking Project, https://covidtracking.com/</Description>
+    <Authors>James Schwietert</Authors>
+    <Company>CompanyJames Schwietert</Company>
+    <Product>Product</Product>
+    <PackageProjectUrl>https://github.com/euclid47/CovidTracking</PackageProjectUrl>
+    <PackageIcon>coronavirus_64.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/euclid47/CovidTracking</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>covid,coronavirus,CovidTracking</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.5" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.5" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\coronavirus_64.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

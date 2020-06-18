@@ -140,7 +140,7 @@ namespace CovidTracking.Api.V1
 
 			if(_memoryCache != null)
 			{
-				result = _memoryCache.Get(key).ToString();
+				_memoryCache.TryGetValue(key, out result);
 			}
 
 			if(_cache != null && string.IsNullOrWhiteSpace(result))
