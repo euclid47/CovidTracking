@@ -1,4 +1,7 @@
 # ![](coronavirus_64.png) CovidTracking
+
+[![](https://img.shields.io/nuget/v/CovidTracking.Api.svg)](https://www.nuget.org/packages/CovidTracking.Api/)
+
 Unofficial client library for [The COVID Tracking Project](https://covidtracking.com/)
 
 ## Usage example
